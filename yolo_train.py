@@ -7,7 +7,7 @@ def main():
     model.train(
         data='D:/Datasets/VisDrone2019_DET_YOLO/data.yaml',
         epochs=100,
-        imgsz=640,
+        imgsz=960,
         batch=4,
         device=0,
         project='train_detection',
