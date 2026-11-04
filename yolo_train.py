@@ -9,16 +9,16 @@ def main():
         epochs=100,
         imgsz=640,
         batch=4,
-        device=0,            # single GPU; multi-GPU DDP is flaky in notebooks
+        device=0,
         project='train_detection',
         amp=False,
-        save_period=5,       # extra snapshot every 5 epochs
+        save_period=5,
         workers=2,
         cos_lr=True,
         close_mosaic=10,
-        deterministic=False,  # faster, tiny reproducibility cost
+        deterministic=False,
         seed=0,
-        # time=11,           # optional: stop gracefully after 11 h (overrides epochs)
+        # time=11,
     )
     
 if __name__ == "__main__":
